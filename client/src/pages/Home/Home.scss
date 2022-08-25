@@ -1,0 +1,86 @@
+// @import form url('./download.png');
+
+
+
+.site-header {
+    position: relative;
+    z-index: 9;
+    
+
+
+    .site-header-box {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+
+    }
+
+}
+
+
+.site-content {
+    display: flex;
+    justify-content: center;
+    
+
+    
+    .post-aria-box,.suggestion-aria-box {
+        .header-space-div{ margin-top: 70px;}
+    }
+    .post-aria-box {
+        margin-top: 10px;
+        width: 470px;
+        // height: 1300px;
+        margin-right: 32px;
+
+
+        
+
+    }
+    .suggestion-aria-box {
+        margin-top: 10px;
+        width: 320px;
+
+
+        .user-control-box {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .user-img{
+                margin-right: 8px;
+                // width: 50px;
+                img{
+                    height: 50px;
+                    width:  50px;
+                    border-radius: 50%;
+                }
+
+            }
+            .user-data {
+                width: 100%;
+                text-align-last: left;
+
+                .user-name {
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+                .user-full-name {
+                    
+                    span {
+                        
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #707070;
+
+                    }
+                }
+            }
+        }
+
+    }
+}

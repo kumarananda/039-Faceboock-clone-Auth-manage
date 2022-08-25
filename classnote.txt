@@ -1,0 +1,55 @@
+google mail api
+> manage account
+    > two factor is on
+        > Enhanced Safe Browsing for account is on 
+            > go app password (require account login)
+                > select app 
+                    > custom name (InstagramPractic)
+                        > generate
+                            > collect APP password (Exmple - xhnsxsbdbwfplptq)
+                             mail same
+
+                             > 
+                            let transport = nodemailer.createTransport({
+                                host: "smtp.gmail.com",
+                                port: 587,
+                                auth: {
+                                user: "anandamernprac@gmail.com",
+                                pass: "lptqxhnsxsbdbwfp"
+                                }
+                            });
+                            await transport.sendMail({
+                                from    : "kumaranandainfo@gmail.com", 
+                                to      : to,
+                                subject : subject,
+                                text    : text ,
+                                html    :html
+                                
+                            })
+
+
+
+Instagram Clone 
+
+- Auth 
+    - user registration 
+    - user login
+    - user account verify by email and OTP System 
+    - Forgot password 
+    - login with facebook, twitter, linkedin, google - firebase
+
+- User profile
+    - profile info update
+    - Profile photo update
+    - Password update
+
+- Apps features 
+    - create a post with photo
+    - put love react 
+    - put a comment into a post 
+    - replay a comment
+    - emoji comments 
+    - post saved feature
+    - Follow a user
+    - two factor auth 
+
