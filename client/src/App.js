@@ -3,8 +3,6 @@ import Home from "./pages/Home/Home";
 import LoginMain from "./pages/Authpages/LoginMain";
 import Profile from "./pages/Profile/Profile";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.scss'
-import './defult.css'
 // import Register from "./pages/Authpages/Register";
 import AuthenticateUser from "./middlewares/AuthenticateUser";
 // import AuthRedirectUser from "./middlewares/AuthRedirectUser";
@@ -20,6 +18,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { creatToast } from "./utility/toast";
 // import ForgotPassword from "./pages/Authpages/ForgotPassword";
 // import ResetPassword from "./pages/Authpages/ResetPassword";
+import './App.scss';
 
 
 function App() {

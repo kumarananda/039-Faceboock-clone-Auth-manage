@@ -4,6 +4,8 @@ import {BrowserRouter} from 'react-router-dom'
 import App from './App';
 import AuthcontextProvider from './providers/AuthcontextProvider';
 import LoadercontextProvider from './providers/LoadercontextProvider';
+import  './defult.scss'
+import Header from './components/Header/Header';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,7 @@ root.render(
     <BrowserRouter>
     <LoadercontextProvider>
       <AuthcontextProvider>
+        <Header/>
         <App />
       </AuthcontextProvider>
     </LoadercontextProvider>

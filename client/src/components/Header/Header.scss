@@ -1,0 +1,132 @@
+@import '../../variables.scss';
+
+
+
+
+.site-header {
+    border-bottom: 1px solid rgba(158, 151, 151, .5);
+    position: relative;
+
+    .search-modal {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 320px;
+        border-right: 1px solid $deafault-border ;
+        border-bottom: 1px solid $deafault-border ;
+        border-radius:  0  0  10px 10px;
+        box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+        background-color: $bg-white;
+
+
+        height: 400px;
+        .top-bar{
+            height: $header-height;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+
+            border-bottom: 1px solid #000;
+            .back{
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover{
+                    background-color: $deafault-bg;
+                }
+
+                svg{
+                    font-size: 16px;
+                }
+            }
+            .input-value{
+
+
+
+                input{
+                    width: 240px;
+                    display: block;
+                    height: $header-item-height;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: $deafault-bg;
+                    margin-left: 5px;
+                    padding: 10px 15px;
+                    font-weight: 300;
+                    font-size: 15px;
+                    // text-align: center;
+
+                    &:focus-visible{
+                        
+                        border-color: transparent;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: #fff;
+        
+
+        .items{
+            display: flex;
+            align-items: center;
+            height: $header-height;
+
+        }
+
+        .header-left {
+            .logo {
+
+                svg{
+                    height: $header-item-height;
+                    width:  $header-item-height;
+                    color: $base-icon-color;
+                }
+            }
+            .input-scearch {
+                
+                button {
+                    margin-left: 10px;
+                    height:$header-item-height;
+                    width: 240px;
+                    background-color: $deafault-bg;
+                    color: $deafault-hover-bg;
+                    outline: none;
+                    border: 1px solid $deafault-border;
+                    padding: 5px;
+                    text-align: left;
+                    border-radius: 20px;
+                    
+                    
+                    svg{
+                        margin-left: 5px;
+                        font-size: 16px;
+                    }
+                    span{
+                        margin-left: 5px;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .header-center {
+
+        }
+        .header-right {
+
+        }
+    }
+}
