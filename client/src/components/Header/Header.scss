@@ -7,70 +7,129 @@
     border-bottom: 1px solid rgba(158, 151, 151, .5);
     position: relative;
 
-    .search-modal {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 320px;
-        border-right: 1px solid $deafault-border ;
-        border-bottom: 1px solid $deafault-border ;
-        border-radius:  0  0  10px 10px;
-        box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
-        background-color: $bg-white;
+    .modal-box{
+        .search-modal {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 320px;
+            border-right: 1px solid $deafault-border ;
+            border-bottom: 1px solid $deafault-border ;
+            border-radius:  0  0  10px 10px;
+            box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+            background-color: $bg-white;
+            display: none;
 
-
-        height: 400px;
-        .top-bar{
-            height: $header-height;
-            display: flex;
-            align-items: center;
-            margin-left: 15px;
-
-            border-bottom: 1px solid #000;
-            .back{
-                height: 40px;
-                width: 40px;
+            // height: 400px;
+            .top-bar{
+                height: $header-height;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                cursor: pointer;
-                &:hover{
-                    background-color: $deafault-bg;
-                }
+                margin-left: 15px;
 
-                svg{
-                    font-size: 16px;
-                }
-            }
-            .input-value{
-
-
-
-                input{
-                    width: 240px;
-                    display: block;
-                    height: $header-item-height;
-                    border: none;
-                    border-radius: 20px;
-                    background-color: $deafault-bg;
-                    margin-left: 5px;
-                    padding: 10px 15px;
-                    font-weight: 300;
-                    font-size: 15px;
-                    // text-align: center;
-
-                    &:focus-visible{
-                        
-                        border-color: transparent;
+                .back{
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $deafault-bg;
                     }
 
+                    svg{
+                        font-size: 16px;
+                    }
+                }
+                .input-value{
+
+
+
+                    input{
+                        width: 240px;
+                        display: block;
+                        height: $header-item-height;
+                        border: none;
+                        border-radius: 20px;
+                        background-color: $deafault-bg;
+                        margin-left: 5px;
+                        padding: 10px 15px;
+                        font-weight: 300;
+                        font-size: 15px;
+                        // text-align: center;
+
+                        &:focus-visible{
+                            
+                            border-color: transparent;
+                        }
+
+                    }
+                }
+
+            }
+            .title-box {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                justify-content: space-between;
+
+                h5{
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-left: 20px;
+
+                    a{
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-right: 20px;
+                    }
                 }
             }
+            .result-box{
 
+                .result-item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    padding: 8px;
+                    border-radius: 8px;
+                    &:hover{
+                        background-color: $deafault-bg;
+                    }
+
+                    .left{
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        img{
+                            height: 35px;
+                            width: 35px;
+                            border-radius: 50%;
+                        }
+                        span{
+                            margin-left: 10px;
+
+                        }
+                    }
+                    svg{
+
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
         }
     }
 
+
+    .search-modal.show{
+        display: block;
+    }
     .header-box {
         display: flex;
         justify-content: space-between;
